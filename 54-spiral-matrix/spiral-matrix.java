@@ -1,7 +1,7 @@
-    import java.util.*;
-    public class Solution{
-    public List<Integer> spiralOrder(int[][]matrix){
-        List<Integer> result = new ArrayList<>();
+import java.util.*;
+public class Solution{
+    public List<Integer>spiralOrder(int[][]matrix){
+        List<Integer>result = new ArrayList<>();
 
         if(matrix.length == 0)return result;
 
@@ -26,15 +26,15 @@
                     result.add(matrix[bottom][i]);
                 }
                 bottom--;
-
             }
-            if(left <= right){
+            if(left<=right){
                 for(int i = bottom ; i >= top ; i--){
-                    result.add(matrix[i][left]);
+                     result.add(matrix[i][left]);
                 }
                 left++;
             }
         }
-        return result;
+          return result;
     }
+  
 }
